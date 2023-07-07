@@ -7,11 +7,12 @@ const greeting = () => {
   return userName;
 };
 
-const getAnswer = (question) => {
-  console.log(`Question: ${question}`);
-  const userAnswer = readlineSync.question('Your answer: ');
-  return userAnswer;
-};
+// const getAnswer = (question) => {
+//   console.log(`Question: ${question}`);
+//   const userAnswer = readlineSync.question('Your answer: ');
+//   return userAnswer;
+// };
+const getAnswer = () => readlineSync.question('Your answer: ');
 
 const wrongAnswer = (wrongAnsw, correctAnsw, name) => {
   console.log(`${wrongAnsw} is wrong answer ;(. Correct answer was ${correctAnsw}.`);
