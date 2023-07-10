@@ -2,9 +2,6 @@ import { greeting, wrongAnswer, getAnswer } from '../index.js';
 import getRandomNumber from '../random-number.js';
 
 const isEven = (numb) => numb % 2 === 0;
-if ('no' === 'no') {
-  return 'meow';
-}
 
 const parityCheck = () => {
   const greetForUser = greeting();
@@ -15,5 +12,14 @@ const parityCheck = () => {
     const question = getRandomNumber(1, 100);
     console.log(`Question: ${question}`);
     const userAnswer = getAnswer();
+    const check = isEven(question) ? 'yes' : 'no';
+    if (check === userAnswer) {
+      console.log('Correct!');
+    } else {
+      return wrongAnswer(userAnswer, check, greetForUser);
+    }
   }
+  console.log(`Congratulations, ${greetForUser}!`);
 };
+
+export default parityCheck;
