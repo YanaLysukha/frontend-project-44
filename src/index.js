@@ -16,4 +16,22 @@ const wrongAnswer = (wrongAnsw, correctAnsw, name) => {
   console.log(`Let's try again, ${name}`);
 };
 
-export { greeting, wrongAnswer, getAnswer, numberOfRounds };
+const runGame = (task, round) => {
+  const greetForUser = greeting();
+  console.log(`${task}`);
+
+  for (let i = 0; i < numberOfRounds; i += 1) {
+    const [question, correctAnswer] = round();
+    console.log(`Question: ${question}`);
+    const userAnswer = getAnswer();
+
+    if (userAnswer === correctAnswer) {
+      console.log('Correct!');
+    } else {
+      return wrongAnswer(userAnswer, correctAnswer, greetForUser);
+    }
+  }
+  console.log(`Congratulations, ${greetForUser}!`);
+};
+
+export default runGame;

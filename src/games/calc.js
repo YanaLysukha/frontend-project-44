@@ -1,4 +1,4 @@
-import { greeting, wrongAnswer, getAnswer, numberOfRounds } from '../index.js';
+import runGame from '../index.js';
 import getRandomNumber from '../random-number.js';
 
 const getOperator = () => {
@@ -20,26 +20,18 @@ const getCalcResult = (num1, num2, operator) => {
   }
 };
 
+const round = () => {
+  const number1 = getRandomNumber(0, 100);
+  const number2 = getRandomNumber(0, 100);
+  const operator = getOperator();
+  const correctAnswer = getCalcResult(number1, number2, operator).toString();
+  const question = `${number1} ${operator} ${number2}`;
+  return [question, correctAnswer];
+};
+
 const calculator = () => {
-  const greetForUser = greeting();
-  console.log('What is the result of the expression?');
-
-  for (let i = 0; i < numberOfRounds; i += 1) {
-    const number1 = getRandomNumber(0, 100);
-    const number2 = getRandomNumber(0, 100);
-    const operator = getOperator();
-    const calcResult = getCalcResult(number1, number2, operator).toString();
-    const question = `${number1} ${operator} ${number2}`;
-    console.log(`Question: ${question}`);
-    const userAnswer = getAnswer();
-
-    if (userAnswer === calcResult) {
-      console.log('Correct!');
-    } else {
-      return wrongAnswer(userAnswer, calcResult, greetForUser);
-    }
-  }
-  console.log(`Congratulations, ${greetForUser}!`);
+  const task = 'What is the result of the expression?';
+  runGame(task, round);
 };
 
 export default calculator;
