@@ -24,7 +24,7 @@ const runGame = (task, round) => {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${greetForUser}`);
+      console.log(`Let's try again, ${greetForUser}!`);
       return;
     }
   }
