@@ -28,10 +28,42 @@ npm link
 
 ## Games
 
-- Brain-even
+- ### Parity check
   ### How to start the game
   ```bash
   brain-even
   ```
   ### Demonstration
   [![asciicast](https://asciinema.org/a/9j8lzYYjH94bbv75FYvh0eSWD.svg)](https://asciinema.org/a/9j8lzYYjH94bbv75FYvh0eSWD)
+
+- ### Calculator
+  ### How to start the game
+  ```bash
+  brain-calc
+  ```
+  ### Demonstration
+  [![asciicast](https://asciinema.org/a/vP0z8Jxco4p62L4sAVlfkhjQm.svg)](https://asciinema.org/a/vP0z8Jxco4p62L4sAVlfkhjQm)
+
+- ### Greatest common divisor
+  ### How to start the game
+  ```bash
+  brain-gcd
+  ```
+  ### Demonstration
+  [![asciicast](https://asciinema.org/a/6Bx0BswHjeYNDkjm3PF5JED7H.svg)](https://asciinema.org/a/6Bx0BswHjeYNDkjm3PF5JED7H)
+  
+- ### Arithmetic progression
+  ### How to start the game
+  ```bash
+  brain-prog
+  ```
+  ### Demonstration
+  [![asciicast](https://asciinema.org/a/TihvrrhIApOlqy9rgOQeKpRGZ.svg)](https://asciinema.org/a/TihvrrhIApOlqy9rgOQeKpRGZ)
+
+- ### Is it a prime number?
+  ### How to start the game
+  ```bash
+  brain-prime
+  ```
+  ### Demonstration
+  [![asciicast](https://asciinema.org/a/m8Yz28w8UJFWnL7qx22ZSldEG.svg)](https://asciinema.org/a/m8Yz28w8UJFWnL7qx22ZSldEG)
