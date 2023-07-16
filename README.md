@@ -29,9 +29,9 @@ npm link
 ## Games
 
 - Brain-even
-  How to start the game
+  ### How to start the game
   ```bash
   brain-even
   ```
-  Demonstration
+  ### Demonstration
   [![asciicast](https://asciinema.org/a/9j8lzYYjH94bbv75FYvh0eSWD.svg)](https://asciinema.org/a/9j8lzYYjH94bbv75FYvh0eSWD)
